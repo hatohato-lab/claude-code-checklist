@@ -1,0 +1,9 @@
+{
+  "name": "checklist",
+  "description": "作業を要素に分け、フォルダーごとに1枚のチェックリスト（HTML）と、行ごとの設計書で進めるスキルのプラグインです。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hatohato-lab"
+  },
+  "license": "MIT"
+}

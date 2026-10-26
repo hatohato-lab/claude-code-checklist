@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>設計書_集める資料の範囲</title>
+<style>
+:root { color-scheme: light; }
+body {
+  background: #ffffff; color: #000000;
+  font-family: Meiryo, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 17px; line-height: 1.85;
+  max-width: 1100px; margin: 0 auto; padding: 24px 16px 80px;
+}
+h1, h2, h3, h4 { color: #000000; font-weight: bold; }
+h1 { font-size: 30px; margin: 0 0 24px; padding: 8px 0; border-bottom: 3px solid #1f6fb2; }
+h2 { font-size: 25px; margin: 100px 0 18px; padding: 8px 12px; background: #d9eefa; border-left: 8px solid #1f6fb2; }
+h3 { font-size: 21px; margin: 40px 0 14px; padding: 6px 12px; background: #eaf6fc; border-left: 5px solid #4a90c8; }
+h4 { font-size: 18px; margin: 28px 0 10px; padding: 4px 10px; background: #f3fafd; border-left: 3px solid #7fb3dc; }
+p, ul, ol, table, figure, details { margin: 0 0 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 16px; }
+caption { text-align: left; font-weight: bold; padding: 0 0 6px; }
+th, td { border: 1px solid #999999; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #eaf6fc; }
+.important { color: #c00000; font-weight: bold; }
+.done { color: #006400; font-weight: bold; }
+.caution { background: #fff3c4; }
+tr.mark td { background: #ffe0e0; }
+a { color: #0645ad; word-break: break-all; }
+figure { margin: 20px 0; text-align: center; }
+figure svg { max-width: 100%; height: auto; cursor: zoom-in; border: 1px solid #dde1e6; background: #fff; padding: 6px; }
+figcaption { font-size: 15px; margin-top: 7px; }
+#zoom { position: fixed; inset: 0; background: rgba(0,0,0,.82); display: none;
+        z-index: 9999; overflow: auto; padding: 22px; box-sizing: border-box; }
+#zoom.on { display: block; }
+#zoom .inner { background: #fff; border-radius: 5px; padding: 15px; margin: 0 auto; width: max-content; max-width: 100%; }
+#zoom svg { max-width: none; height: auto; cursor: zoom-out; border: 0; padding: 0; }
+#zoom .bar { position: sticky; top: 0; text-align: right; margin-bottom: 9px; }
+#zoom button { font-family: inherit; font-size: 15px; padding: 6px 15px; margin-left: 6px;
+               border: 1px solid #333; background: #fff; border-radius: 4px; cursor: pointer; }
+</style>
+</head>
+<body>
+<!-- 設計書の見本。写したら、title と h1 をファイルの名前にそろえ、戻るリンクの先を、その行があるチェックリストにする。 -->
+<p><a href="チェックリスト_第1階層_下調べ.html">チェックリストへ戻る</a></p>
+<h1>設計書_集める資料の範囲</h1>
+<h2>全体像（手順3つの図）</h2>
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="ACTIVITY" style="width:186px;height:262px;background:#FFFFFF;" width="186px" height="262px" viewBox="0 0 186 262" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><defs/><g font-family="sans-serif" lengthAdjust="spacing"><ellipse cx="91.004" cy="25" rx="10" ry="10" fill="#222" style="stroke:#222;stroke-width:1;"/><rect x="22" y="55" width="138.008" height="35.094" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="12.5" ry="12.5"/><text x="32" y="77.457" fill="#000" font-size="12" textLength="118.008">1 候補の資料を並べる</text><rect x="16" y="110.094" width="150.008" height="35.094" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="12.5" ry="12.5"/><text x="26" y="132.551" fill="#000" font-size="12" textLength="130.008">2 範囲の決め方を決める</text><rect x="28" y="165.188" width="126.008" height="35.094" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="12.5" ry="12.5"/><text x="38" y="187.645" fill="#000" font-size="12" textLength="106.008">3 決めた範囲を書く</text><ellipse cx="91.004" cy="231.281" rx="11" ry="11" fill="none" style="stroke:#222;stroke-width:1;"/><ellipse cx="91.004" cy="231.281" rx="6" ry="6" fill="#222" style="stroke:#222;stroke-width:1;"/><line x1="91.004" y1="35" x2="91.004" y2="55" style="stroke:#181818;stroke-width:1;"/><polygon points="87.004,45,91.004,55,95.004,45,91.004,49" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="91.004" y1="90.094" x2="91.004" y2="110.094" style="stroke:#181818;stroke-width:1;"/><polygon points="87.004,100.094,91.004,110.094,95.004,100.094,91.004,104.094" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="91.004" y1="145.188" x2="91.004" y2="165.188" style="stroke:#181818;stroke-width:1;"/><polygon points="87.004,155.188,91.004,165.188,95.004,155.188,91.004,159.188" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="91.004" y1="200.281" x2="91.004" y2="220.281" style="stroke:#181818;stroke-width:1;"/><polygon points="87.004,210.281,91.004,220.281,95.004,210.281,91.004,214.281" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/></g></svg>
+  <figcaption>図1　集める資料の範囲を決める3つの手順</figcaption>
+</figure>
+<h2>1. 候補の資料を並べる（本と論文の20点）</h2>
+<p>図書館の蔵書の検索と論文の検索で、候補を20点並べます。</p>
+<h2>2. 範囲の決め方（3つの条件）</h2>
+<table>
+<caption>範囲に入れる条件（3つ）</caption>
+<tr><th>条件</th><th>理由</th></tr>
+<tr><td>2020年以降に出たもの</td><td>古い統計を避けるため</td></tr>
+<tr><td>日本語か英語で読めるもの</td><td>読む時間を見積もれるため</td></tr>
+<tr><td>図書館で借りられるか、無料で読めるもの</td><td>費用をかけないため</td></tr>
+</table>
+<h2>3. 決めた範囲（12点）</h2>
+<p>3つの条件に合った12点を、集める範囲にします。<span class="important">条件に合わない8点は集めません。</span></p>
+<p>12点の一覧は、設計書「集めた資料の一覧」に書きます。</p>
+<div id="zoom" aria-hidden="true">
+  <div class="bar">
+    <button id="zoomOut">小さく</button>
+    <button id="zoomIn">大きく</button>
+    <button id="zoomClose">閉じる（Esc）</button>
+  </div>
+  <div class="inner" id="zoomBox"></div>
+</div>
+<script>
+(function () {
+  var zoom = document.getElementById('zoom');
+  var box  = document.getElementById('zoomBox');
+  var scale = 1, baseW = 0;
+  function apply() {
+    var s = box.querySelector('svg');
+    if (s && baseW) { s.setAttribute('width', Math.round(baseW * scale)); s.removeAttribute('height'); }
+  }
+  function open(src) {
+    var clone = src.cloneNode(true);
+    clone.removeAttribute('style');
+    var vb = (clone.getAttribute('viewBox') || '').split(/[\s,]+/);
+    baseW = vb.length === 4 ? parseFloat(vb[2]) : (src.clientWidth || 800);
+    scale = Math.min(1.6, Math.max(1, (window.innerWidth - 110) / baseW));
+    box.innerHTML = '';
+    box.appendChild(clone);
+    apply();
+    zoom.classList.add('on');
+    zoom.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    zoom.classList.remove('on');
+    zoom.setAttribute('aria-hidden', 'true');
+    box.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('figure svg').forEach(function (s) {
+    s.addEventListener('click', function () { open(s); });
+  });
+  document.getElementById('zoomClose').addEventListener('click', close);
+  document.getElementById('zoomIn').addEventListener('click', function () { scale = Math.min(scale * 1.25, 6); apply(); });
+  document.getElementById('zoomOut').addEventListener('click', function () { scale = Math.max(scale / 1.25, 0.3); apply(); });
+  zoom.addEventListener('click', function (e) {
+    if (e.target === zoom || e.target.tagName.toLowerCase() === 'svg') close();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>
